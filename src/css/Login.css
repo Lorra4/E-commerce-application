@@ -1,0 +1,118 @@
+.loginContainer {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  font-size: large;
+  font-weight: bold;
+  background-color: #f7cc3cde;
+  position: relative;
+  overflow: hidden;
+}
+
+.left,
+.right {
+  width: 50%;
+  height: inherit;
+}
+
+.middle {
+  position: absolute;
+  top: -20px;
+  margin: 0 10%;
+  width: 80%;
+  height: 120vh;
+  border-radius: 50%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 5% 0 0 0;
+  align-items: center;
+  background: white;
+  font-weight: 400;
+}
+
+.middle h2 {
+  font-weight: 400;
+  margin: 5px 0 15px 0;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin: 0 0 20px 0;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+}
+
+.block > input,
+.middle button {
+  margin: 10px;
+  padding: 10px;
+  transition: all 0.2s ease;
+}
+
+.block > input {
+  border: 1px solid black;
+  outline: none;
+}
+
+.block > input:focus {
+  outline: 1px solid #0dc962;
+}
+
+.middle button {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #018136;
+  width: 64%;
+  color: white;
+  font-weight: bold;
+}
+
+.block > label {
+  align-self: flex-start;
+  margin-left: 2%;
+}
+
+.middle button:hover {
+  background-color: #089e4c;
+  color: white;
+}
+
+.externalUsers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin: 25px 0 0 0;
+}
+
+.externalUsers > button {
+  background-color: rgb(181, 181, 181);
+  color: black;
+}
+
+.or {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 63%;
+  margin: 0 0 15px 0;
+}
+
+.or span {
+  margin: 0 15px;
+}
+.orLeft,
+.orRight {
+  background-color: black;
+  height: 1px;
+  width: 80%;
+}

@@ -1,0 +1,181 @@
+* > button {
+  cursor: pointer;
+  border: none;
+}
+
+.allSectionsContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5%;
+  background-color: #ededed;
+  height: 100%;
+  justify-content: flex-start;
+}
+
+.bodyContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-height: 91vh;
+  overflow: auto;
+}
+
+.singleSectionApps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
+  grid-gap: 30px;
+  margin: 2% 0;
+}
+.singleSectionContainer {
+  width: 70%;
+  margin: 3%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 5px;
+  padding: 5%;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  width: 150px;
+  height: 180px;
+  border: 1px solid #80808075;
+  justify-content: space-around;
+  font-weight: 500;
+}
+
+.app > img {
+  width: 50px;
+  height: 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 0 1% 2%;
+}
+
+.logoutBtn {
+  margin: 10px 10px 10px 0px;
+  background-color: inherit;
+  border: 2px solid #80808075;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.logoutBtn:hover {
+  background-color: #afabab;
+  color: #ededed;
+}
+
+.searchBar {
+  margin: 5px 10%;
+  border: 2px solid #afabab;
+  border-radius: 5px;
+  height: 50%;
+  align-self: center;
+  display: flex;
+}
+.searchBar > svg {
+  padding: 8px 0 10px 10px;
+}
+
+.searchBarInput {
+  width: 35vh;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  outline: none;
+}
+
+.appOptionsButton {
+  background-color: inherit;
+  border: none;
+  align-self: end;
+  cursor: pointer;
+  position: relative;
+}
+
+.appOptionsButton svg {
+  width: 20px;
+  height: 20px;
+  fill: rgb(107, 107, 107);
+}
+
+.sectionDropDownBtn {
+  border: none;
+  background-color: inherit;
+  font-size: large;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sectionDropDownBtn > svg {
+  margin: 0 5px 0 0;
+}
+
+.reportButtons {
+  position: absolute;
+  top: -25%;
+  right: 0;
+  left: 230%;
+  background-color: white;
+  border: 2px solid rgba(128, 128, 128, 0.254);
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(154, 161, 171, 0.52);
+  width: 800%;
+  color: #98a6ad;
+  transition: 0.3s all ease;
+  text-align: center;
+}
+
+.reportButtons > button {
+  color: #6c757d;
+  width: 100%;
+  padding: 10px;
+}
+
+.reportButtons svg {
+  width: 15px;
+  height: 15px;
+}
+
+.reportButtons > button:hover {
+  color: #272e37;
+  text-decoration: none;
+  background-color: #f8f9fa;
+}
+
+.show {
+  opacity: 1;
+  z-index: 2;
+}
+
+.hide {
+  opacity: 0;
+  z-index: -1;
+}
+
+.topIcons {
+  height: 10px;
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-around;
+  width: 25%;
+}
+
+.topIcons span {
+  cursor: pointer;
+}
+
+.sectionTopContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: auto;
+}
